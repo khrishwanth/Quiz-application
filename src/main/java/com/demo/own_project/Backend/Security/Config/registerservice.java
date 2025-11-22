@@ -1,4 +1,4 @@
-package com.demo.own_project.Security.Config;
+package com.demo.own_project.Backend.Security.Config;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,9 +13,9 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.demo.own_project.Security.JwtToken.JwtService;
-import com.demo.own_project.Security.UserDetails.userRepo;
-import com.demo.own_project.Security.UserDetails.users;
+import com.demo.own_project.Backend.Security.JwtToken.JwtService;
+import com.demo.own_project.Backend.Security.UserDetails.userRepo;
+import com.demo.own_project.Backend.Security.UserDetails.users;
 @RestController
 @Component
 public class registerservice {

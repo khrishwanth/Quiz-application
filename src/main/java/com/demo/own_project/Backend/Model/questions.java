@@ -1,4 +1,5 @@
-package com.demo.own_project.Model;
+
+package com.demo.own_project.Backend.Model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

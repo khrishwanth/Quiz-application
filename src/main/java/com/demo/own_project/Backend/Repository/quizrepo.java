@@ -1,4 +1,6 @@
-package com.demo.own_project.Repository;
+
+package com.demo.own_project.Backend.Repository;
+
 
 import java.util.List;
 import java.util.Optional;
@@ -7,7 +9,8 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
-import com.demo.own_project.Model.quiz;
+import com.demo.own_project.Backend.Model.quiz;
+
 @Repository
 public interface quizrepo extends JpaRepository<quiz,Integer> {
 

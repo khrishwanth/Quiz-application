@@ -1,4 +1,6 @@
-package com.demo.own_project.Controller;
+
+package com.demo.own_project.Backend.Controller;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
@@ -7,7 +9,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.demo.own_project.Service.quizcontroller;
+import com.demo.own_project.Backend.Service.quizcontroller;
 
 @RequestMapping("hi")
 @Controller

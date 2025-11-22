@@ -1,4 +1,4 @@
-package com.demo.own_project.Security.JwtToken;
+package com.demo.own_project.Backend.Security.JwtToken;
 
 import java.io.IOException;
 
@@ -10,7 +10,7 @@ import org.springframework.security.web.authentication.WebAuthenticationDetailsS
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
 
-import com.demo.own_project.Security.UserDetails.customUserDetailsService;
+import com.demo.own_project.Backend.Security.UserDetails.customUserDetailsService;
 
 import io.micrometer.common.lang.NonNull;
 import jakarta.servlet.FilterChain;

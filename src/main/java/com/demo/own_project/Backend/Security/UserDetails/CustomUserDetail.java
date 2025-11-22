@@ -1,4 +1,4 @@
-package com.demo.own_project.Security.UserDetails;
+package com.demo.own_project.Backend.Security.UserDetails;
 
 import java.util.Collection;
 import java.util.Collections;
