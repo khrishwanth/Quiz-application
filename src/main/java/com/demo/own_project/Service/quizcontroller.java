@@ -1,4 +1,4 @@
-package com.demo.own_project;
+package com.demo.own_project.Service;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,6 +13,11 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.demo.own_project.Repository.quizrepo;
+import com.demo.own_project.Model.quiz;
+import com.demo.own_project.Model.questions;
+import com.demo.own_project.Repository.questionrepo;
 
 @RequestMapping("hi")
 @Controller

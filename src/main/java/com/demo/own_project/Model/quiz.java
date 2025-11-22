@@ -1,4 +1,4 @@
-package com.demo.own_project;
+package com.demo.own_project.Model;
 
 import java.util.List;
 

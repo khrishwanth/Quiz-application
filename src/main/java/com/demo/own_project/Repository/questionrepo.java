@@ -1,10 +1,12 @@
-package com.demo.own_project;
+package com.demo.own_project.Repository;
 
 import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
+
+import com.demo.own_project.Model.questions;
 @Repository
 public interface questionrepo extends JpaRepository<questions, Integer>{
 
