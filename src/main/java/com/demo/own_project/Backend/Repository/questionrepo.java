@@ -15,10 +15,8 @@ public interface questionrepo extends JpaRepository<questions, Integer>{
 
     List<questions> findByCategory(String category);
 
- 
- 
     @Query(value ="select * from questions q where q.title=:ti and q.category=:cate order by rand()", nativeQuery=true)
-    List<questions> createquiz(String ti,String cate);
+    List<questions> FetchQuiz(String ti,String cate);
 
     @Query(value = "select answer from questions q where q.title=:title and q.category=:category", nativeQuery=true)
     List<String> getans(String title,String category);

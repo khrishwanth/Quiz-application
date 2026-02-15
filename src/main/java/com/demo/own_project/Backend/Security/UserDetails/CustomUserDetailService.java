@@ -9,14 +9,16 @@ import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
 
+import com.demo.own_project.Backend.Model.users;
+
 @Service
-public class CustomUserDetail implements UserDetails {
+public class CustomUserDetailService implements UserDetails {
     @Autowired
     public users user;
     @Autowired
-    public customUserDetailsService service;
+    public customUserDetailController service;
 
-   public CustomUserDetail(users user){
+   public CustomUserDetailService(users user){
     this.user = user;
    }
 
@@ -34,6 +36,9 @@ public class CustomUserDetail implements UserDetails {
     public String getUsername() {
         return user.getUsername();
     }
-    
-    
+
+    public Integer getId(){
+        return user.getId();
+    }
+       
 }

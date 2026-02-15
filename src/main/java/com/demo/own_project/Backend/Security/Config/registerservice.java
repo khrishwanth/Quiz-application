@@ -13,9 +13,9 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.demo.own_project.Backend.Model.users;
+import com.demo.own_project.Backend.Repository.userRepo;
 import com.demo.own_project.Backend.Security.JwtToken.JwtService;
-import com.demo.own_project.Backend.Security.UserDetails.userRepo;
-import com.demo.own_project.Backend.Security.UserDetails.users;
 @RestController
 @Component
 public class registerservice {
@@ -27,7 +27,7 @@ public class registerservice {
     @PutMapping("reg")
     public String register(@RequestBody users user) throws Useralreadyfoundexception {
         String name = user.getUsername();
-        String existingUser =repo.checkUser(name);
+        String existingUser = repo.checkUser(name);
         if(existingUser == null){
           //BCryptPasswordEncoder encoder = new BCryptPasswordEncoder(12);
           user.setPassword(encoder.encode(user.getPassword()));

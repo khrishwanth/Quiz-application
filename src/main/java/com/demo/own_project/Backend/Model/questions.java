@@ -14,8 +14,8 @@ import lombok.Setter;
 @Getter
 @Setter
 public class questions {
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
     @Id
+    @GeneratedValue(strategy= GenerationType.IDENTITY)
    private int id;
    private String  title;
    private String category;

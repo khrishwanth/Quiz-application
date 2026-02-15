@@ -1,4 +1,4 @@
-package com.demo.own_project.Security.JwtToken;
+package com.demo.own_project.Backend.Security.JwtToken;
 
 import java.util.Date;
 import java.util.HashMap;

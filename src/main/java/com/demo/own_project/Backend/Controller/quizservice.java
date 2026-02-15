@@ -18,8 +18,8 @@ import com.demo.own_project.Backend.Service.quizcontroller;
 public class quizservice {
     @Autowired
     public quizcontroller controller;
-       @PutMapping("create/{title}/{category}")
-     public void create(@PathVariable String title , @PathVariable  String category){
-        controller.create(title, category);
+      @PutMapping("create/{title}/{category}")
+     public void CreateQuiz(@PathVariable String title , @PathVariable  String category){
+        controller.createNewquiz(title, category);
      }
 }
